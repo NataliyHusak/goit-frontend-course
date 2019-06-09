@@ -1,0 +1,72 @@
+.menu {
+    width: 50%;
+    margin: auto;
+    background: none;
+}
+
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px; 
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.menu-link {
+    display: block;
+    width: 110px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.box {
+    width: 960px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.padge-box {
+    width: 470px;
+    display: inline-block;
+    text-align: left;
+}
+.text-contain {
+    width: 420px;
+}
+
+.sheet-name {
+    font-family: 'Miriad Pro';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #b4ad9e;
+}
+.text-title {
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    line-height: 36px;
+    font-style: normal;
+    color: #626262;
+    }
+.text-contain {
+    font-family: 'Playfair Display';
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    color: #626262;
+}
+.position {
+    width: 1%;
+    margin: auto;
+    background: none;
+}
+.text-footer {
+    display: block;
+    width: 90px;
+    text-align: center;
+    
+    
+}
