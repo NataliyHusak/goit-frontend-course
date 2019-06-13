@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;  
+}
+.page-header {
+    background: none;
+}
+.page-nav {
+padding: 88px 0px;
+}
+
+body {
+    font-family: Playfair Display;
+    color: 255 255 255;
+    font-size: 14px;
+    line-height: 24px;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+  } 
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.site-navigation {
+    display: inline-block;
+    width: 900px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin-right: 90px;
+}
+
+.site-navigation li:last-child {
+    margin-right: 0;
+}
+
+.menu_item {
+    padding: 70 0 96 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: none;
+    font-size: 14px;
+    display: inline-block;
+    color: rgb(100, 100, 100);
+}
+.menu_item:hover {
+    color: blue;
+}
+.menu_item:focus {
+    color: blue;
+    }
+.page_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.page_list_item {
+    display: inline-block;
+    font-size: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 420px;
+    height: auto;
+    margin-right: 60px;
+    margin-bottom: 40px;
+}
+
+.page_list_item:nth-child(2n) {
+    margin-right: 0;
+    }
+.page_list_item:nth-last-child(2n) {
+    margin-bottom: 0px;
+}
+
+.page_list_item h3 {
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+}
+
+
+
+.page_img {
+    display: block;
+    margin-bottom: 35px;
+}
+
+.page_title {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Ubuntu;
+    margin-bottom: 36px;
+    color: rgb(100, 100, 100);
+}  
+
+
+
+.text-title {
+    display: inline-block;
+    text-transform: none;
+    font-size: 24px;
+    font-family: Playfair Display;
+    margin-bottom: 30px;  
+    color: rgb(100, 100, 100);  
+}
+.page_caption {
+    display: inline-block;
+    text-transform: none;
+    font-size: 14px;
+    font-family: Playfair Display;
+    color: rgb(100, 100, 100);
+}
+
+.load {
+    display: inline-block;
+    vertical-align: middle;
+    width: 164px;
+    margin: 0;
+    padding: 18px 35px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    color: rgb(100, 100, 100);   
+}
+
+
+
