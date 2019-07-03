@@ -1,0 +1,375 @@
+.body {
+    font-family: "Roboto" sans-serif;
+    color: #858282;
+    line-height: 18px;
+    
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    }
+
+/*Header*/
+.page-header {
+    margin-bottom: 100px;
+    
+    }
+
+.page-nav {
+    padding: 38px 0;
+}
+
+.site-logo {
+float: left;
+
+}
+
+.site-navigation {
+    float: right;
+    list-style: none;
+    text-transform: uppercase;
+       
+}
+
+.site-navigation-item {
+    float: left;
+    margin: 0 16px;
+}
+
+.site-navigation li:last-child {
+margin-right: 0;
+}
+
+.site-navigation a {
+    text-align: none;
+    text-decoration: none;
+    color: rgb(15 1 1);
+    font-family: sans-serif Bold;
+}
+
+.site-navigation a:hover {
+    color: rgb(26, 188, 156);
+}
+
+/*Main*/
+
+/*slider*/
+.slider {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+    background-size: cover;
+} 
+
+.slides {
+    display: flex;
+    width: 100vw;
+} 
+
+
+.slide {
+    max-width: 100%;
+    height: 600px;
+}
+
+.slide-img {
+    width: 100vw;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.slide-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 300px;
+    z-index: 1;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+.slide-title {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.slide-text {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.buttons-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 10;
+}
+
+.slider-button {
+    border: none; 
+    outline: none; 
+    cursor: pointer;
+    opacity: 0.6;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(17, 228, 185);
+    z-index: 20;
+   }
+   
+   
+.slider-button-left {
+    left: 0;
+}
+
+.slider-button-right {
+    right: 0;
+}
+
+.slider-button-icon {
+    display: inline-block;
+    text-align: center;
+}
+.slider-button:hover {
+    background:  rgb(17, 228, 185);
+    opacity: 1;
+    border: 1px solid  rgb(17, 228, 185);   
+}
+
+
+/*colection products*/
+
+.colection-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 25px;
+    line-height: 32px;
+}
+
+.colection-title::after {
+    content: '';
+    display: block;
+    height: 6px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-right: 460px;
+    margin-left: 460px;
+    background-color: rgb(26, 188, 156);
+}
+
+.colection-list {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 0px;
+    max-width: 1600px;
+    height: auto;
+}
+
+.colection-products {
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
+.colection-list-item {
+    position: relative;
+    list-style: none;
+    width: 255px;
+    height: 322px;
+    float: left;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
+}
+
+.colection-list-item {
+    margin-right: 30px;
+} 
+.colection-list-item:first-of-type {
+    margin-left: 30px;
+} 
+
+.colection-list-item:not(:nth-last-of-type(-n+4)) {
+    margin-bottom: 30px;
+} 
+
+.colection-list-title {
+    float: left;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: rgb(50 50 50);
+    color: rgb(225 255 255);
+    width: 200px;
+    --h: 42px;
+    height: var(--h);
+    line-height: var(--h);
+    padding-left: 10px;
+
+}
+.list-price {
+    float: right;
+    font-size: 18px;
+    background: rgb(140 140 140);
+    color: rgb(225 255 255);
+    width: 55px;
+    --h: 42px;
+    height: var(--h);
+    line-height: var(--h);
+    text-align: center;
+    
+}
+
+.colection-list-item:hover .list-price {
+    background: rgb(26 188 156);   
+}
+
+.colection-list-item:hover .colection-list-title {
+    background: rgb(127 219 199);  
+}
+
+.colection-image {
+    width: 255px;
+    height: 280px;
+}
+
+.overlay {
+    position: absolute;
+    width: 235px;
+    height: 260px;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(115, 115, 115);
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.overlay-icon-pos {
+    display: none;
+}
+
+.colection-list-item:hover .overlay-icon-pos {
+    position: absolute;
+    display: block;
+    height: 105px;
+    width: 190px;
+    top: 80px;
+    left: 35px;
+    z-index: 20;
+}
+.icon-btn:hover {
+    background: #1abc9c;
+    opacity: 1;
+    border: 1px solid #1abc9c;
+  }
+
+ 
+
+.overlay-icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border: solid 2px rgb(250, 250, 250);
+    position: relative;  
+    background: none;
+    z-index: 30;
+}
+
+.overlay-icon img {
+position: absolute;
+height: 25px;
+width: 25px;
+left: 12px;
+top: 12px;
+}
+
+.colection-list-item:hover .overlay {
+    opacity: 0.5;  
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.button {
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+    position: absolute;
+}
+.button-card {
+    position: absolute;
+    display: block;
+    z-index: 20;
+    height: 50px;
+    width: 180px;
+    margin-left: 5px;
+    background: rgb(50, 50, 50);
+    border: solid 2px rgb(250, 250, 250);
+    z-index: 30;
+}
+.button-card img {
+    display: inline-block;
+    margin-right: 5px;
+    
+}
+.button-card-add {
+    display: inline-block;
+    font-size: 14px;
+    color:  rgb(250, 250, 250);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    }
+
+
+
+
+/*footer*/
+.footer {
+    display: inline-block;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(50 50 50);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 35px;
+     
+}
+
+.footer-text {
+    display: inline-block;
+   
+
+}
+
+.footer-text-last {
+    display: inline-block;
+    color: rgb(26 188 156);
+}
