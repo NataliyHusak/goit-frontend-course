@@ -215,6 +215,7 @@ Services
     font-family: 'Montserrat';
     font-weight: bold;
     text-transform: uppercase;
+    align-items: center;
     font-size: 14px;
     padding-left: 20px;
     padding-top: 20px;
@@ -242,6 +243,7 @@ Services
 .button {
     height: 66px;
     width: 240px;
+    text-transform: uppercase;
     background-color: #fed136;
     color: rgb(255, 255, 255);
     font-size: 18px;
