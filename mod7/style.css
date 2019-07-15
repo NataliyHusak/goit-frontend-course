@@ -214,6 +214,7 @@ Services
 .input {
     font-family: 'Montserrat';
     font-weight: bold;
+    text-transform: uppercase;
     font-size: 14px;
     padding-left: 20px;
     padding-top: 20px;
@@ -227,6 +228,7 @@ Services
 .textarea {
     font-family: 'Montserrat';
     font-weight: bold;
+    text-transform: uppercase;
     font-size: 14px;
     padding-left: 20px;
     padding-top: 20px;
