@@ -319,8 +319,7 @@ button {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 660px;
-  }
+    }
 
   .team-list__item {
     flex: 0 0 266px;
