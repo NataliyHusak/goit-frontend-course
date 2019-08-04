@@ -1,0 +1,482 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+button:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Montserrat", "Roboto", "Kaushan Script", sans-serif;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  height: 1000px;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.padge-header {
+  background-color: #efd789;
+  background-image: linear-gradient(359deg, #efd789 0%, #e88282 100%);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  height: 1000px;
+  margin-bottom: 50px;
+  padding: 0;
+  position: relative;
+  z-index: 50;
+}
+
+.padge-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  margin-bottom: 84px;
+}
+
+.site-logo {
+  display: block;
+}
+
+.site-logo__img {
+  width: 120px;
+  height: 30px;
+  color: #fff;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  list-style: none;
+}
+
+.site-navigation__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation__link {
+  display: block;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-navigation__link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgb(252, 227, 138);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s ease-in-out;
+}
+.site-navigation__link:hover {
+  color: rgb(252, 227, 138);
+}
+.site-navigation__link:hover::after {
+  visibility: visible;
+  opacity: 1;
+  color: rgb(252, 227, 138);
+}
+
+.header__text {
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 72px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.header__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 120px;
+}
+
+.button {
+  width: 160px;
+  height: 40px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: rgb(255, 225, 255);
+  cursor: pointer;
+}
+
+.header__button {
+  border: solid 4px rgb(255, 225, 255);
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+}
+.header__button:hover {
+  box-shadow: #e88282;
+}
+
+.section {
+  display: block;
+}
+
+.section__about {
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.section__title::after {
+  content: "";
+  width: 65px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  background: rgb(246, 161, 161);
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+.section__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.section__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 90px;
+  line-height: 18px;
+}
+
+.servises {
+  display: block;
+}
+
+.servises__list {
+  margin: 0 auto;
+}
+
+.servises__item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 350px;
+  max-height: 70px;
+  position: relative;
+  margin-bottom: 100px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.servises__icon {
+  position: absolute;
+  transform: translateX(-50px);
+  height: 32px;
+  width: 32px;
+}
+
+.servises__icon-alarm {
+  background-image: url(../icons/ALARM.svg);
+}
+.servises__icon-graph {
+  background-image: url(../icons/GRAPH.svg);
+}
+.servises__icon-computer {
+  background-image: url(../icons/COMPUTER.svg);
+}
+.servises__icon-book {
+  background-image: url(../icons/BOOK.svg);
+}
+.servises__icon-home {
+  background-image: url(../icons/HOME.svg);
+}
+.servises__icon-image {
+  background-image: url(../icons/IMAGE.svg);
+}
+
+.servises__item-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.servises__item-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.team {
+  display: block;
+}
+
+.team__list {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  }
+
+.team__item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: relative;
+  max-width: 380px;
+  min-height: 630px;
+}
+
+.team__item:hover .team__item-overlay {
+  visibility: visible;
+  background-color: rgb(149, 225, 211);
+  opacity: 0.7;
+  z-index: 20;
+  transition: 1s;
+}
+
+.team__item-img {
+  margin-bottom: 30px;
+  height: 470px;
+  z-index: 0;
+}
+
+.team__item-overlay {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  width: 380px;
+  height: 470px;
+  background-color: rgb(149, 225, 211);
+  cursor: pointer;
+  z-index: 20;
+}
+
+.team__item-blok {
+  display: inline-flex;
+  text-align: center;
+  flex-direction: column;
+  max-width: 380px;
+}
+
+.team__item-name {
+  text-align: center;
+  font-family: "Montserrat", "Roboto";
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.team__item-about {
+  text-align: center;
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 14px;
+}
+
+.socials__link {
+  display: block;
+  width: 59px;
+  height: 59px;
+}
+
+.socials {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  left: -10px;
+  top: -10px;
+  width: 380px;
+  height: 470px;
+  background-image: linear-gradient(rgb(235, 140, 137), rgb(242, 226, 145));
+  cursor: pointer;
+  z-index: 30;
+}
+
+.socials__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  left: -5px;
+  top: -5px;
+  width: 380px;
+  height: 470px;
+  background-image: linear-gradient(rgb(235, 140, 137), rgb(242, 226, 145));
+  cursor: pointer;
+  z-index: 40;
+}
+
+.socials__icon {
+  
+  width: 55px;
+  height: 55px;
+  background-color: rgb(252, 227, 138);
+  opacity: 1;
+  cursor: pointer;
+  margin: 0 2px;
+  z-index: 50;
+}
+
+.visualli-hidden {
+  display: flex;
+  align-content: center;
+  visibility: hidden;
+  position: absolute;
+  background-color: rgb(252, 227, 138);
+  cursor: pointer;
+  z-index: 50;
+}
+
+.visualli-hidden:hover {
+  visibility: visible;
+}
+
+.team__item:hover .socials {
+  visibility: visible;
+  background-image: linear-gradient(rgb(235, 140, 137), rgb(242, 226, 145));
+  opacity: 0.7;
+  z-index: 30;
+}
+
+.socials__icon:hover {
+  background-color: rgb(243, 129, 129);
+}
+
+/*.icon-faceboock {
+  display: flex;
+  width: 55px;
+  height: 55px;
+  background: url(../icons/facebook.svg) no-repeat center center;
+  background-color: rgb(252, 227, 138);
+  opacity: 0.8;
+  cursor: pointer;
+  margin: 0 2px;
+  z-index: 50;
+}
+
+.icon-Twiter {
+  display: flex;
+  width: 55px;
+  height: 55px;
+  background: url(../icons/twitter.svg) no-repeat center center;
+  background-color: rgb(252, 227, 138);
+  opacity: 0.8;
+  cursor: pointer;
+  margin: 0 2px;
+  z-index: 50;
+}
+
+.icon-Pinterest {
+  display: flex;
+  width: 55px;
+  height: 55px;
+  background: url(../icons/pinterest.svg) no-repeat center center;
+  background-color: rgb(252, 227, 138);
+  opacity: 0.8;
+  cursor: pointer;
+  margin: 0 2px;
+  z-index: 50;
+}
+
+.icon-Instagram {
+  display: flex;
+  width: 55px;
+  height: 55px;
+  background: url(../icons/instagram.svg) no-repeat center center;
+  background-color: rgb(252, 227, 138);
+  opacity: 0.8;
+  cursor: pointer;
+  margin: 0 2px;
+  z-index: 50;
+}
+*/
+
+/*FOOTER*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+  align-items: center;
+}
+
+.footer__button {
+  background-color: rgb(149, 225, 211);
+}
+
+.userneme {
+  width: 230px;
+  height: 40px;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+/*Media */
